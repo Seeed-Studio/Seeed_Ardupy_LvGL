@@ -3,3 +3,4 @@ lextab.py
 yacctab.py
 *.swo
 *.bak
+lv_ardupy/
