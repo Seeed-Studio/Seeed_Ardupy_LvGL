@@ -12,4 +12,5 @@ LVGL_MPY_METADATA=$LVGL_ARDUPY_DIR/lv_mpy.json
 echo "LVGL-GEN $LVGL_PP"
 mkdir -p $LVGL_ARDUPY_DIR
 gcc -E  -I$CURRENT_DIR/pycparser/utils/fake_libc_include -I$CURRENT_DIR  $LVGL_DIR/lvgl.h > $LVGL_PP
+echo "LVGL-GEN $LVGL_MPY"
 python3 $CURRENT_DIR/gen/gen_mpy.py -M lvgl -MP lv -MD $LVGL_MPY_METADATA -E $LVGL_PP $LVGL_DIR/lvgl.h > $LVGL_MPY

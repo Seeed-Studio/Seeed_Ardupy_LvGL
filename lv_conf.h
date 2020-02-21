@@ -83,7 +83,7 @@ typedef int16_t lv_coord_t;
 /* Automatically defrag. on free. Defrag. means joining the adjacent free cells. */
 #  define LV_MEM_AUTO_DEFRAG  1
 #else       /*LV_MEM_CUSTOM*/
-#  define LV_MEM_CUSTOM_INCLUDE  "stdlib.h"   /*Header for the dynamic memory function*/
+#  define LV_MEM_CUSTOM_INCLUDE  "ArduinoLibrarys/Seeed_Ardupy_LvGL/include/lv_mp_mem_custom_include.h"   /*Header for the dynamic memory function*/
 #  define LV_MEM_CUSTOM_ALLOC     m_malloc       /*Wrapper to malloc*/
 #  define LV_MEM_CUSTOM_FREE      m_free         /*Wrapper to free*/
 #endif     /*LV_MEM_CUSTOM*/
